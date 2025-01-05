@@ -1,0 +1,86 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #1a1a2e;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px 0;
+  text-align: center;
+}
+
+header .logo {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.projects-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #f0db4f;
+}
+
+#projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #16213e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1);
+}
+
+.project h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #f0db4f;
+}
+
+.project p {
+  font-size: 1rem;
+}
+
+.project a {
+  text-decoration: none;
+  color: #4facfe;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f3460;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f0db4f;
+}
