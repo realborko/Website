@@ -2,28 +2,35 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: #1a1a2e;
-  color: #fff;
+  font-family: 'Georgia', serif;
+  background: #0b0f13; /* Dark forest-like background */
+  color: #d4d4d4;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
+/* Header */
 header {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background: linear-gradient(135deg, #1b262c, #0f3460);
   padding: 20px 0;
   text-align: center;
+  border-bottom: 1px solid #2c353c;
 }
 
 header .logo {
   max-width: 80px;
   margin-bottom: 10px;
+  filter: brightness(80%);
 }
 
 header h1 {
   font-size: 2.5rem;
   margin: 0;
+  color: #aad8d3;
+  text-shadow: 0 0 10px #28b485;
 }
 
+/* Projects Section */
 .projects-container {
   max-width: 1200px;
   margin: 40px auto;
@@ -34,7 +41,8 @@ header h1 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #f0db4f;
+  color: #28b485;
+  text-shadow: 0 0 5px #0f3460;
 }
 
 #projects-list {
@@ -43,44 +51,77 @@ header h1 {
   gap: 20px;
 }
 
+/* Project Card */
 .project {
-  background: #16213e;
+  background: #16213e; /* Night-time forest color */
+  border: 1px solid #1c1f26;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transform: scale(0.9);
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  transform: translateY(10px);
 }
 
 .project:hover {
-  transform: scale(1);
+  transform: translateY(0);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* Glow Animation for the Header */
+header:hover h1 {
+  text-shadow: 0 0 15px #28b485, 0 0 30px #28b485, 0 0 50px #28b485;
+}
+
+/* Project Text */
 .project h3 {
   margin: 0 0 10px;
   font-size: 1.5rem;
-  color: #f0db4f;
+  color: #aad8d3;
 }
 
 .project p {
   font-size: 1rem;
+  color: #9fa8ba;
 }
 
 .project a {
   text-decoration: none;
-  color: #4facfe;
+  color: #28b485;
   font-weight: bold;
   display: inline-block;
   margin-top: 10px;
+  transition: color 0.3s ease;
 }
 
+.project a:hover {
+  color: #aad8d3;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background: #0f3460;
+  background: #0b0f13;
+  color: #6c7983;
 }
 
 footer a {
   text-decoration: none;
-  color: #f0db4f;
+  color: #28b485;
+}
+
+/* Animations */
+body {
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
