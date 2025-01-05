@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         projectsList.appendChild(project);
       });
 
-      // Add animations
+      // Add dark forest entrance animation
       gsap.from(".project", {
         opacity: 0,
         y: 50,
